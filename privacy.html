@@ -63,77 +63,84 @@
 <body>
   <div class="container">
     <h1>Privacy Policy</h1>
-    <p class="effective-date">Effective date: July 10, 2026</p>
+    <p class="effective-date">Effective date: November 13, 2026</p>
 
     <div class="highlight-box">
-      <p>Your data is yours. We don't sell it, share it with advertisers, or use it to train AI models. We only collect what's needed to run the app.</p>
+      <p>Your notes live on your phone. We never store them. They're only sent to our AI to create your insights. Only notes you choose to share with your team are stored, and only until the season ends.</p>
     </div>
 
-    <h2>What we collect</h2>
-    <p>When you create an account and use MatchMind AI, we store:</p>
+    <h2>The short version</h2>
     <ul>
-      <li>Your name, email address, and username</li>
-      <li>A securely hashed version of your password (we cannot see your actual password)</li>
+      <li>Your notes, players and match details are saved on your iPhone, and backed up to your own private iCloud if you use iCloud.</li>
+      <li>Our server stores only your account and how many AI insights you've used.</li>
+      <li>When you ask for AI insights, your notes pass through our server to our AI provider. We don't keep them.</li>
+      <li>No ads, no trackers, and we never sell your data.</li>
+    </ul>
+
+    <h2>What stays on your iPhone</h2>
+    <ul>
+      <li>Your notes and voice note text</li>
+      <li>Players you track (names and ratings)</li>
+      <li>Match details: dates, scores, results, partners, court, surface, time of day and weather</li>
+      <li>Saved courts</li>
+      <li>AI insights and your strategy feedback</li>
+    </ul>
+
+    <h2>iCloud backup</h2>
+    <p>If iCloud is on for MatchMind, Apple backs up this data to your private iCloud storage and syncs it to your other devices. It's stored in your iCloud account under Apple's privacy policy, and we can't see it. You can turn this off in iOS Settings. If iCloud is off, your notes exist only on your phone, so export a copy from the Account tab.</p>
+
+    <h2>What our server stores</h2>
+    <ul>
+      <li>Your name, email address and username</li>
+      <li>Your password, scrambled with bcrypt (we can't see it)</li>
       <li>Your preferred format (singles or doubles)</li>
-      <li>Match logs, scores, and results you enter</li>
-      <li>Player names, notes, and scouting data you record</li>
-      <li>Voice note transcriptions (text only — see below)</li>
-      <li>Saved courts and locations</li>
-      <li>AI-generated player summaries and strategies</li>
+      <li>Your plan and how many AI insights you've used this period</li>
+      <li>Login sessions</li>
     </ul>
+    <p>Our server is hosted by Render. It doesn't store your notes, players, match details or AI insights.</p>
 
-    <h2>Voice recordings</h2>
-    <p>When you use the voice note feature, your speech is converted to text directly on your iPhone using Apple's built-in speech recognition. <strong>Audio is never recorded, stored, or transmitted to our servers</strong> — only the transcribed text is saved.</p>
+    <h2>AI insights</h2>
+    <p>When you ask for insights about a player (or the app refreshes them after you save a note), the app sends that player's notes and match details over an encrypted connection to our server, which passes them to <strong>Anthropic's Claude AI</strong> and returns the result. Our server doesn't save or log your notes or the insights; the insights are saved on your phone.</p>
+    <p>Under its commercial terms, Anthropic doesn't use this data to train its models and automatically deletes it within 30 days, unless it's flagged for violating Anthropic's usage policy or must be kept by law.</p>
 
-    <h2>How your data is stored</h2>
-    <p>Your data is stored on our backend server, which is hosted on <strong>Render</strong>. All communication between the app and our server uses HTTPS encryption. Each user's data is isolated — you can only see your own players, matches, and notes.</p>
+    <h2>Voice notes</h2>
+    <p>Your speech is turned into text on your iPhone using Apple's on-device speech recognition. Audio never leaves your phone and is never recorded or stored. Only the text is saved, on your phone.</p>
 
-    <h2>Backups and data recovery</h2>
-    <p><strong>Pro users:</strong> We maintain server-side backups of your data. If you lose access or accidentally delete something, you can email us to request data recovery.</p>
-    <p><strong>Free users:</strong> We do not maintain server-side backups. If your data is lost, we cannot recover it. You can export your data as a JSON file anytime from the Account tab as a self-service backup.</p>
+    <h2>Court locations and weather</h2>
+    <p>When you search for a court, what you type is sent to Apple Maps to find matching places. When you save a note with a court, the court's map location and the match date are sent to Apple Weather to get that day's conditions. MatchMind never asks for or uses your own location.</p>
 
-    <h2>Who can access your data</h2>
-    <p>Only you can see your data through the app. As the operator of the service, we have technical access to the database, but we will only access your data when you specifically request it (for example, if a Pro user asks us to recover lost data). We do not read, review, or share your match notes or player data for any other purpose.</p>
+    <h2>Team sharing (Captain)</h2>
+    <p>If you use team features, you choose which opponent notes to share. Shared notes are stored on our server for your team only, and are deleted when the season ends, when you unshare them, or when you leave the team. Partner notes can't be shared. Match results (scores, partners and wins or losses, not notes) are shared with your team automatically.</p>
 
-    <h2>AI-generated summaries</h2>
-    <p>When you request AI insights, the text of your notes is sent securely to <strong>Anthropic's Claude API</strong> to generate a summary or strategy. During this process:</p>
+    <h2>What we don't do</h2>
+    <p>We don't sell your data, share it with advertisers, or use it to train AI. We don't use advertising networks, analytics, trackers or social media SDKs.</p>
+
+    <h2>Your choices</h2>
     <ul>
-      <li>Data is transmitted over encrypted (HTTPS) connections</li>
-      <li>Anthropic does not use API inputs to train their models</li>
-      <li>The generated insights are stored on our server so you can view them again later</li>
+      <li>Export your notes any time, and import a backup (Account tab)</li>
+      <li>Edit your profile and password (Account tab)</li>
+      <li>Delete your account in the app (Account &rarr; Delete Account). This removes your account from our server right away, and you can also delete your notes from your phone and iCloud.</li>
+      <li>Deleting the app removes notes from your phone. Copies in iCloud stay until you delete them (Settings &rarr; your name &rarr; iCloud &rarr; Manage Storage).</li>
     </ul>
 
-    <h2>Data security</h2>
-    <p>Passwords are hashed using bcrypt, an industry-standard algorithm designed to resist brute-force attacks. All communication between the app and our servers uses HTTPS encryption.</p>
+    <h2>Security</h2>
+    <p>All connections use HTTPS encryption. Passwords are scrambled with bcrypt, and your login is kept in the iPhone's secure Keychain.</p>
 
-    <h2>Your rights</h2>
-    <p>You can:</p>
+    <h2>Services we use</h2>
     <ul>
-      <li>Edit your profile and password anytime from the Account tab</li>
-      <li>Export all your data as a JSON file from the Account tab</li>
-      <li>Request account deletion by tapping "Delete Account" in the app or emailing us</li>
+      <li><strong>Anthropic (Claude)</strong>: creates AI insights from your notes</li>
+      <li><strong>Render</strong>: hosts our server and account database</li>
+      <li><strong>Apple</strong>: iCloud backup, on-device speech recognition, Maps search and Weather</li>
     </ul>
 
-    <h2>Third-party services</h2>
-    <p>MatchMind AI uses these services to operate:</p>
-    <ul>
-      <li><strong>Anthropic (Claude API)</strong> — processes note text for AI-generated insights</li>
-      <li><strong>Render</strong> — hosts our backend server and database</li>
-      <li><strong>Apple Speech Recognition</strong> — transcribes voice notes on your device</li>
-    </ul>
-    <p>We do not use advertising networks, third-party analytics, trackers, or social media SDKs.</p>
+    <h2>Children</h2>
+    <p>MatchMind isn't intended for children under 13, and we don't knowingly collect information from children under 13.</p>
 
-    <h2>AI-generated content disclaimer</h2>
-    <p>Player summaries, strategies, and other AI-generated insights are produced by artificial intelligence based on the match logs and notes you provide. These are intended as informational tools to support your preparation and should not be relied upon as guarantees of match outcomes. AI-generated content may contain inaccuracies. Use your own judgment when making decisions on court.</p>
+    <h2>AI-generated content</h2>
+    <p>AI insights are informational and may contain mistakes. Use your own judgment on court.</p>
 
-    <h2>Children's privacy</h2>
-    <p>MatchMind AI is not directed at children under 13. We do not knowingly collect information from children under 13.</p>
-
-    <h2>Changes to this policy</h2>
-    <p>If we make significant changes, we'll notify users through the app. Minor clarifications may be made without notice.</p>
-
-    <h2>Contact</h2>
-    <p>Questions about this policy? Reach us at <strong>privacy@matchmindai.app</strong></p>
+    <h2>Changes and contact</h2>
+    <p>If we make significant changes to this policy, we'll let you know in the app. Questions? Email <strong>privacy@matchmindai.app</strong></p>
   </div>
 </body>
 </html>
